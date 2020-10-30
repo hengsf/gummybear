@@ -11,7 +11,7 @@ youtube link and/or images here
 
 
 ## Installation
-- Install all required module using the "requirements.txt" file
+- Install all required module using the "requirement.txt" file
 
 ## Prerequisites
 - User has to run the Python script as a root user

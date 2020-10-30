@@ -4,8 +4,14 @@ import pefile
 import PEA
 import APK_A
 
+# Warnings for md5 etc because only can query 4 per minute. We no money sis :<
+
 url = 'https://www.virustotal.com/vtapi/v2/file/report'
 api_key = 'da7c3a5c32bed2ec55d2836b19fcf2898ba7383815cdc2ab391b7b52e03f5baf'
+
+def get_path():
+    in_val = input("Path:")
+    vt_query(in_val)
 
 def vt_query(file):
     failure1 = False
@@ -18,11 +24,16 @@ def vt_query(file):
     #
     hashfile = ""
     sha256_hash = hashlib.sha256()
-    with open(file, "rb") as f:
-        # Read and update hash string value in blocks of 4K
-        for byte_block in iter(lambda: f.read(4096), b""):
-            sha256_hash.update(byte_block)
-        hashfile = (sha256_hash.hexdigest())
+
+    try:
+        with open(file, "rb") as f:
+            # Read and update hash string value in blocks of 4K
+            for byte_block in iter(lambda: f.read(4096), b""):
+                sha256_hash.update(byte_block)
+            hashfile = (sha256_hash.hexdigest())
+    except:
+        print("Wrong file name: ")
+        get_path()
 
     # Call VT via our api key
     params = {'apikey': api_key , 'resource': hashfile}

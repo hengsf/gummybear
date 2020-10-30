@@ -7,15 +7,18 @@ import APK_A
 url = 'https://www.virustotal.com/vtapi/v2/file/report'
 api_key = 'da7c3a5c32bed2ec55d2836b19fcf2898ba7383815cdc2ab391b7b52e03f5baf'
 
-def vt_query(): #should put arg/input
+def vt_query(file):
     failure1 = False
     failure2 = False
+
+    # parse file in sis
+
     #
     # Compute hash sha256 of files
     #
-    hashfile=""
+    hashfile = ""
     sha256_hash = hashlib.sha256()
-    with open('/home/l/Desktop/2202/Assignment/Data/fakeAV_148B76C664F2854E2947AF01160FFA99_LabelReader.apk', "rb") as f:
+    with open(file, "rb") as f:
         # Read and update hash string value in blocks of 4K
         for byte_block in iter(lambda: f.read(4096), b""):
             sha256_hash.update(byte_block)
@@ -46,12 +49,12 @@ def vt_query(): #should put arg/input
         print("Times detected by common anti-virus: " + str(positives)+ "/" + str(total) +"\n")
 
         try:
-            PEA.pefile_analy("/home/l/Desktop/2202/Assignment/Data/P_malware.exe")
+            PEA.pefile_analy("")
         except:
             failure1 = True
 
         try:
-            APK_A.apk_analy("PUT FILE PATH HERE")
+            APK_A.apk_analy()
         except:
             failure2 = True
 

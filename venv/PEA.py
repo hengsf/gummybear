@@ -51,5 +51,6 @@ def possible_out(import_list):
 
     print("\n\nFor deeper understanding of what the malware might do, look into the individual function a dynamic link library calls. \nIf this file is packed, what is shown may not be entirely accurate.")
     print("If the file is packed, consider using PEiD to uncover packer used. If none is found, consider using OllyDump to unpack said file.\n")
+    print("\n================END of REPORT================")
 
 

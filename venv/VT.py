@@ -49,12 +49,12 @@ def vt_query(file):
         print("Times detected by common anti-virus: " + str(positives)+ "/" + str(total) +"\n")
 
         try:
-            PEA.pefile_analy("")
+            PEA.pefile_analy(file)
         except:
             failure1 = True
 
         try:
-            APK_A.apk_analy()
+            APK_A.apk_analy(file)
         except:
             failure2 = True
 

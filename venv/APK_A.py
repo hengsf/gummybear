@@ -23,6 +23,8 @@ def apk_analy(file):
     # Signature
     look_at_cert(apkf)
 
+    print("\n================END of REPORT================")
+
 def get_app_name(app_name):
         print("/////////////////////////////////////////")
         print("/// ANDROID APP NAME: " + app_name)

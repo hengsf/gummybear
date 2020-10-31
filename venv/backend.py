@@ -3,8 +3,8 @@ import subprocess
 import VT
 
 # Mount image file
-def mount_image():
-    image_file = input("Creating a mounting point at /mnt/gummybear")
+def mount_image(image_file):
+    print("Creating a mounting point at /mnt/gummybear")
     command = 'mkdir /mnt/gummybear'
     os.system(command)
 
@@ -36,7 +36,7 @@ def find_files(image_file):
 
 
 def processing(image_file):
-    mount_image()
+    mount_image(image_file)
     find_directories(image_file)
 
 # Uncomment this when testing in this file

@@ -71,7 +71,7 @@ def no_image():
 
     # Locations
     backup_file = disk_input + '_backup.img'
-    backup_location = dir + disk_input + '_backup.img'
+    backup_location = dir + '/' + disk_input + '_backup.img'
 
     # Compare hash
     if hash_before[:40] == hash_after[:40]:
@@ -82,7 +82,7 @@ def no_image():
 
     else:
         print('Hash of image does not match original, run the program again.')
-        command = 'rm ' + dir + disk_img
+        command = 'rm ' + dir + '/' + disk_img
         os.system(command)
         command = 'rm ' + backup_location
         os.system(command)

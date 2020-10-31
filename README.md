@@ -1,7 +1,8 @@
-# ICT2202 Assignment One
-Digital Forensics Assignment for 2020/21 T1
+ICT2202 Assignment One
+=======
+This is our Digital Forensics Assignment for 2020/21 T1 - GummyBear Analyzer Tool.
 
-## Description
+## Description of this project
 1. Automated process of imaging files with working copies provided.
 2. Hashing of files to check against a database of hashes for known viruses/ malware. 
 3. Hashing of Android Application Package (APK).
@@ -23,7 +24,8 @@ youtube link and/or images here
 
 ## Prerequisites
 - User has to run the Python script as a root user.
-- User must be using python3
+- User must be using python3.
+- User must install sleuthkit.
 - Automount must be disabled.
 
 ## How to Run This

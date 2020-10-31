@@ -13,13 +13,40 @@ This is our Digital Forensics Assignment for 2020/21 T1 - GummyBear Analyzer Too
 - User must install sleuthkit.
 - Automount must be disabled.
 
-## Installation
-- Clone the repository onto an Ubuntu machine. 
-- Install all required module using the "requirements.txt" file with the commnad: pip3 install -r requirements.txt
+## Installation & How to Run
+**Step 1:** Clone the repository onto an Ubuntu machine. 
 
-## How to Run This
-- Navigate to the folder containing the CLI.py file.
-- Run as root with the following command to start the program: python3 CLI.py
+**Step 2:** Install all required module using the "requirements.txt" file with the following command:
+```
+pip3 install -r requirements.txt
+```
+**Step 3:** Check if you have python3 installed with the following command:
+```
+python3 -- version
+```
+If not, install python3:
+```
+apt install python3
+```
+<i> Please install version 3.6.9 and above </i>
+
+**Step 4:** Install sleuthkit using the following command:
+```
+apt install sleuthkit
+```
+**Step 5:** Disable automount with the following commands:
+```
+gsettings set org.gnome.desktop.media-handling automount false
+```
+```
+gsettings set org.gnome.desktop.media-handling automount-open false 
+```
+and restart your machine
+
+**Step 6:** Navigate to the foldercontaining the CLI.py file and Run as root with the following command to start the program:
+```
+python3 CLI.py
+```
 
 ## Limitations
 - Imaging of disks will vary based on disk size.

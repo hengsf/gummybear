@@ -44,7 +44,7 @@ answer = prompt(questions)
 if (answer.get('CHOICE') == '1'):
     imaging.with_image()
 elif (answer.get('CHOICE') == '2'):
-    VT.vt_query()
+    imaging.no_image()
 elif (answer.get('CHOICE') == '3'):
     VT.vt_query()
 

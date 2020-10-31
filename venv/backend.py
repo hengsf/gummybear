@@ -13,7 +13,7 @@ def mount_image(image_file):
         os.system(command)
         print("Image has been mounted at /mnt/gummybear. \n")
         
-     except:
+    except:
         print("WARNING: Mount point in use, unmounting in progress. Exit mount point if required.")
         command = 'umount /dev/gummybear'
         os.system(command)

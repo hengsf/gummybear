@@ -40,9 +40,9 @@ def vt_query(file):
     except:
         print("Wrong file name.\n")
         user_in = input("1. File from mount point. \n2. File from local host.")
-        if user_in == 1:
+        if int(user_in) == 1:
             get_path_2()
-        elif user_in == 2:
+        elif int(user_in) == 2:
             get_path()
         else:
             print("Incorrect input. Exiting now")
@@ -57,9 +57,9 @@ def vt_query(file):
     if (vt_response.get('response_code') == 0):
         print("oof, this is a file that has not been scanned and thus no matches were found.\nPlease enter another file path.")
         user_in = input("1. File from mount point. \n2. File from local host.")
-        if user_in == 1:
+        if int(user_in) == 1:
             get_path_2()
-        elif user_in == 2:
+        elif int(user_in) == 2:
             get_path()
         else:
             print("Incorrect input. Exiting now")

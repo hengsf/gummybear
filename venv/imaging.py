@@ -3,9 +3,6 @@ import subprocess
 
 # User with an image file
 def with_image():
-    # testing
-    file_end = '/mnt/tmp/'
-
     disk_input = input("Enter path of disk file: ")
 
     # Get hash of before
@@ -16,11 +13,11 @@ def with_image():
     txt = '/home/l/Desktop/ForensicGUI/venv/sdb3.img'
     file_name = txt.split("/")[-1].split(".")[0]
 
-    command = 'cp ' + disk_input + ' ' +  file_end + file_name + '_backup.img'
+    command = 'cp ' + disk_input + ' ' + file_name + '_backup.img'
     os.system(command)
 
     # Get hash of after
-    command = 'sha1sum ' + file_end + file_name + '_backup.img'
+    command = 'sha1sum ' + file_end + '_backup.img'
     hash_after = os.popen(command).read()
 
     if hash_before[:40] == hash_after[:40]:
@@ -30,10 +27,11 @@ def with_image():
 
     else:
         print('Hash of image does not match original, run the program again.')
-        # command = ' rm ' + file_name + '_backup.img'
-        # os.system(command)
+        command = ' rm ' + file_name + '_backup.img'
+        os.system(command)
         exit()
 
+   # processing(statement)
 
 # User without an image file
 def no_image():

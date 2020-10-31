@@ -44,6 +44,10 @@ def vt_query(file):
     response = requests.get(url, params=params)
 
     vt_response = response.json()
+    
+    if (vt_response.get('response_code') == 0):
+        print("oof, this is a file that has not been scanned and thus no matches were found.\nPlease enter another file path.")
+        get_path_input()
 
     md5 = vt_response["md5"]
     sha256 = vt_response["sha256"]

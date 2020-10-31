@@ -32,7 +32,7 @@ def with_image():
         os.system(command)
         exit()
 
-    processing(statement)
+    backend.processing(statement)
 
 # User without an image file
 def no_image():
@@ -86,7 +86,7 @@ def no_image():
         os.system(command)
         exit()
 
-    processing(backup_location)
+    backend.processing(backup_location)
 # Uncomment this when testing in this file
 # with_image()
 # no_image()

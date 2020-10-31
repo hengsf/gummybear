@@ -46,6 +46,6 @@ if (answer.get('CHOICE') == '1'):
 elif (answer.get('CHOICE') == '2'):
     imaging.no_image()
 elif (answer.get('CHOICE') == '3'):
-    VT.vt_query()
+    VT.get_path()
 
 

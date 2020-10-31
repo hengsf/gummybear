@@ -1,5 +1,6 @@
 import os
 import subprocess
+import VT
 
 # Mount image file
 def mount_image():

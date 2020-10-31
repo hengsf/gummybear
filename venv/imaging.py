@@ -23,7 +23,7 @@ def with_image():
     command = 'sha1sum ' + file_end + file_name + '_backup.img'
     hash_after = os.popen(command).read()
 
-    if hash_before == hash_after:
+    if hash_before[:40] == hash_after[:40]:
         dir = os.popen('pwd').read()
         statement = dir + file_name + '_backup.img'
         print("A backup image file has been created at: " + statement)
@@ -37,7 +37,7 @@ def with_image():
 
 # User without an image file
 def no_image():
-    # Display devices
+        # Display devices
     lsblk_command = 'lsblk -f /dev/sd*'
     os.system(lsblk_command)
 
@@ -69,9 +69,9 @@ def no_image():
     hash_after = os.popen(command).read()
 
     # Compare hash
-    if hash_before == hash_after:
+    if hash_before[:40] == hash_after[:40]:
         # Create a working copy of image
-        command = 'cp ' + disk_img + disk_input + '_backup.img'
+        command = 'cp ' + disk_img + ' ' + disk_input + '_backup.img'
         os.system(command)
         statement = dir + disk_input + '_backup.img'
         print("A backup image file has been created at: " + statement)

@@ -38,8 +38,15 @@ def vt_query(file):
                 sha256_hash.update(byte_block)
             hashfile = (sha256_hash.hexdigest())
     except:
-        print("Wrong file name: ")
-        get_path()
+        print("Wrong file name.\n")
+        user_in = input("1. File from mount point. \n2. File from local host.")
+        if user_in == 1:
+            get_path_2()
+        elif user_in == 2:
+            get_path()
+        else:
+            print("Incorrect input. Exiting now")
+            exit()
 
     # Call VT via our api key
     params = {'apikey': api_key , 'resource': hashfile}
@@ -49,7 +56,14 @@ def vt_query(file):
     
     if (vt_response.get('response_code') == 0):
         print("oof, this is a file that has not been scanned and thus no matches were found.\nPlease enter another file path.")
-        get_path_input()
+        user_in = input("1. File from mount point. \n2. File from local host.")
+        if user_in == 1:
+            get_path_2()
+        elif user_in == 2:
+            get_path()
+        else:
+            print("Incorrect input. Exiting now")
+            exit()
 
     md5 = vt_response["md5"]
     sha256 = vt_response["sha256"]

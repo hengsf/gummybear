@@ -52,13 +52,30 @@ python3 CLI.py
 - Imaging of disks will vary based on disk size.
 - Hashing of files for verification with the API is limited to four queries per minute.
 
-## Technologies Used
-- Android Malware Zoo:
-  https://github.com/ashishb/android-malware
+## References/Technologies Used
+- Android Malware Zoo https://github.com/ashishb/android-malware
 - Self-coded malware
-- VirusTotal
-- Androguard
-- Python modules: 
+- VirusTotal https://developers.virustotal.com/reference#file-report
+- Androguard https://pypi.org/project/androguard/
+- Python modules/libraries/api: 
+    https://docs.python.org/3/library/collections.html
+    https://docs.python.org/3/library/os.html
+    https://docs.python.org/3/library/sys.html
+    https://docs.python.org/3/library/struct.html
+    https://docs.python.org/3.0/library/mmap.html
+    https://docs.python.org/3/library/hashlib.html
+    https://docs.python.org/3/library/re.html
+    https://pypi.org/project/PyInquirer/
+    https://pypi.org/project/pyfiglet/
+    https://pypi.org/project/requests/
+    https://pypi.org/project/pefile/
 
-## Demo
+## Demo/User Guide
 youtube link and/or images here
+
+## Authors
+Lim Zhi Hong @LZHcoroda
+Lee Jia Ying @jyyyyyyyyy
+Muhammad Rawandy Bin Rosle @RawandyRosle
+Heng Sinn Fei @hengsf
+Heng Pei Min @hengpeimin

@@ -62,7 +62,7 @@ def no_image():
     os.system(command)
 
     dir = os.popen('pwd').read().rstrip()
-    statement = 'An image has been create: ' + dir + disk_img
+    statement = 'An image has been create: ' + dir + '/' + disk_img
     print(statement)
 
     # Get hash of after

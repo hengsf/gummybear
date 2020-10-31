@@ -24,6 +24,7 @@ youtube link and/or images here
 ## Prerequisites
 - User has to run the Python script as a root user.
 - User must be using python3
+- Automount must be disabled.
 
 ## How to Run This
 - Navigate to the folder containing the CLI.py file.

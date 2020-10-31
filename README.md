@@ -58,17 +58,17 @@ python3 CLI.py
 - VirusTotal https://developers.virustotal.com/reference#file-report
 - Androguard https://pypi.org/project/androguard/
 - Python modules/libraries/api: 
-    * https://docs.python.org/3/library/collections.html
-    * https://docs.python.org/3/library/os.html
-    * https://docs.python.org/3/library/sys.html
-    * https://docs.python.org/3/library/struct.html
-    * https://docs.python.org/3.0/library/mmap.html
-    * https://docs.python.org/3/library/hashlib.html
-    * https://docs.python.org/3/library/re.html
-    * https://pypi.org/project/PyInquirer/
-    * https://pypi.org/project/pyfiglet/
-    * https://pypi.org/project/requests/
-    * https://pypi.org/project/pefile/
+    * collections https://docs.python.org/3/library/collections.html
+    * os https://docs.python.org/3/library/os.html
+    * sys https://docs.python.org/3/library/sys.html
+    * struct https://docs.python.org/3/library/struct.html
+    * mmap https://docs.python.org/3.0/library/mmap.html
+    * hashlib https://docs.python.org/3/library/hashlib.html
+    * regex https://docs.python.org/3/library/re.html
+    * pyInquirer https://pypi.org/project/PyInquirer/
+    * pyfiglet https://pypi.org/project/pyfiglet/
+    * requests https://pypi.org/project/requests/
+    * pefile https://pypi.org/project/pefile/
 
 ## Demo/User Guide
 youtube link and/or images here

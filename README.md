@@ -43,6 +43,12 @@ gsettings set org.gnome.desktop.media-handling automount-open false
 ```
 <i> restart your machine </i>
 
+Alternatively, install dconf-editor:
+```
+apt install dconf-editor
+```
+Open dconf-editor > org > gnome > desktop > media-handling, turn off <b>automount</b> and <b>automount-open</b>
+
 **Step 6:** Navigate to the foldercontaining the CLI.py file and Run as root with the following command to start the program:
 ```
 python3 CLI.py

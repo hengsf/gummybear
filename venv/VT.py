@@ -5,27 +5,29 @@ import PEA
 import APK_A
 import sys
 
+# Warnings for md5 etc because only can query 4 per minute.
 sys.tracebacklimit = 0
-# Warnings for md5 etc because only can query 4 per minute. We no money sis :<
 
 url = 'https://www.virustotal.com/vtapi/v2/file/report'
 api_key = 'da7c3a5c32bed2ec55d2836b19fcf2898ba7383815cdc2ab391b7b52e03f5baf'
 
+# Input for option 3.
 def get_path():
     in_val = input("Enter path of file: ")
-    in_val = '/mnt/gummy/' + in_val
-    print('Choosing: ' + in_val)
     vt_query(in_val)
 
+# Input for option 1 and 2.
+def get_path_2():
+    in_val = input("Enter path of file: ")
+    in_val = '/mnt/gummybear/' + in_val
+    print('Choosing: ' + in_val)
+    vt_query(in_val)   
+      
 def vt_query(file):
     failure1 = False
     failure2 = False
 
-    # parse file in sis
-
-    #
     # Compute hash sha256 of files
-    #
     hashfile = ""
     sha256_hash = hashlib.sha256()
 

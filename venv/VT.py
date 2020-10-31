@@ -13,12 +13,12 @@ api_key = 'da7c3a5c32bed2ec55d2836b19fcf2898ba7383815cdc2ab391b7b52e03f5baf'
 
 # Input for option 3.
 def get_path():
-    in_val = input("Enter path of file: ")
+    in_val = input("Enter full path of file: ")
     vt_query(in_val)
 
 # Input for option 1 and 2.
 def get_path_2():
-    in_val = input("Enter path of file: ")
+    in_val = input("Enter file name: ")
     in_val = '/mnt/gummybear/' + in_val
     print('Choosing: ' + in_val)
     vt_query(in_val)   

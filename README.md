@@ -50,7 +50,7 @@ python3 CLI.py
 
 ## Limitations
 - Imaging of disks will vary based on disk size.
-- Hashing of files for verification with the API is limited to four queries per minute.
+- Hashing of files for verification with the API is limited to <b> four queries per minute </b>.
 
 ## References/Technologies Used
 - Android Malware Zoo https://github.com/ashishb/android-malware

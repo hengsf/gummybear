@@ -22,7 +22,7 @@ pip3 install -r requirements.txt
 ```
 **Step 3:** Check if you have python3 installed with the following command:
 ```
-python3 -- version
+python3 --version
 ```
 If not, install python3:
 ```
@@ -41,7 +41,7 @@ gsettings set org.gnome.desktop.media-handling automount false
 ```
 gsettings set org.gnome.desktop.media-handling automount-open false 
 ```
-and restart your machine
+<i> restart your machine </i>
 
 **Step 6:** Navigate to the foldercontaining the CLI.py file and Run as root with the following command to start the program:
 ```

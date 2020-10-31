@@ -7,8 +7,23 @@ This is our Digital Forensics Assignment for 2020/21 T1 - GummyBear Analyzer Too
 2. Hashing of files to check against a database of hashes for known viruses/ malware. 
 3. Hashing of Android Application Package (APK).
 
-## Demo
-youtube link and/or images here
+## Prerequisites
+- User has to run the Python script as a <b> root user </b>.
+- User must be using python3.
+- User must install sleuthkit.
+- Automount must be disabled.
+
+## Installation
+- Clone the repository onto an Ubuntu machine. 
+- Install all required module using the "requirements.txt" file with the commnad: pip3 install -r requirements.txt
+
+## How to Run This
+- Navigate to the folder containing the CLI.py file.
+- Run as root with the following command to start the program: python3 CLI.py
+
+## Limitations
+- Imaging of disks will vary based on disk size.
+- Hashing of files for verification with the API is limited to four queries per minute.
 
 ## Technologies Used
 - Android Malware Zoo:
@@ -18,20 +33,5 @@ youtube link and/or images here
 - Androguard
 - Python modules: 
 
-## Installation
-- Clone the repository onto an Ubuntu machine. 
-- Install all required module using the "requirements.txt" file with the commnad: pip3 install -r requirements.txt
-
-## Prerequisites
-- User has to run the Python script as a root user.
-- User must be using python3.
-- User must install sleuthkit.
-- Automount must be disabled.
-
-## How to Run This
-- Navigate to the folder containing the CLI.py file.
-- Run as root with the following command to start the program: python3 CLI.py
-
-## Limitations
-- Imaging of disks will vary based on disk size.
-- Hashing of files for verification with the API is limited to four queries per minute.
+## Demo
+youtube link and/or images here

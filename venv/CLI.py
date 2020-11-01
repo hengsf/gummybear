@@ -16,7 +16,7 @@ from pprint import pprint
 banner = Figlet(font='slant')
 print(banner.renderText('GUMMYBEAR WORLD'))
 
-print("HELLO to our tool.\nThis tool aims to automate imaging of evidence disk(s). \nAND\nperform malware scan and analysis for Portable Executable(PE) file as well as Android Application Package(APK) file.\n\n")
+print("HELLO welcome to our tool.\nThis tool aims to automate imaging of evidence disk(s). \nAND\nperform malware scan and analysis for Portable Executable(PE) file as well as Android Application Package(APK) file.\n\n")
 print("You may enter:")
 print("1 - Specify disk image location to find the file")
 print("2 - (NO DISK IMAGE) Create disk image of unmounted evidence disk")

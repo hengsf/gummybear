@@ -1,0 +1,17 @@
+  / ____/ / / /  |/  /  |/  /\ \/ / __ )/ ____/   |  / __ \   | |     / / __ \/ __ \/ /   / __ \
+ / / __/ / / / /|_/ / /|_/ /  \  / __  / __/ / /| | / /_/ /   | | /| / / / / / /_/ / /   / / / /
+/ /_/ / /_/ / /  / / /  / /   / / /_/ / /___/ ___ |/ _, _/    | |/ |/ / /_/ / _, _/ /___/ /_/ / 
+\____/\____/_/  /_/_/  /_/   /_/_____/_____/_/  |_/_/ |_|     |__/|__/\____/_/ |_/_____/_____/
+
+=======================================            =============================================
+
+Upon running the program script. A short welcome message will de displayed as well as a prompt for you to choose between 3 different options as shown below.
+
+[1] - Specify disk image location to find the file
+[2] - (NO DISK IMAGE) Create disk image of unmounted evidence disk
+[3] - Conduct finding of potential malware & produce analysis report
+
+? Which actionwould you like to perform?
+
+
+

@@ -42,7 +42,7 @@ def no_image():
     lsblk_command = 'lsblk -f /dev/sd*'
     os.system(lsblk_command)
 
-    disk_input = input("Enter disk to image (sd*): ")
+    disk_input = input("Enter disk to image (sd**): ")
 
     # Path to disks
     disk_dev = '/dev/' + disk_input

@@ -60,7 +60,6 @@ python3 CLI.py
 
 ## References/Technologies Used
 - Android Malware Zoo https://github.com/ashishb/android-malware
-- Self-coded malware
 - VirusTotal https://developers.virustotal.com/reference#file-report
 - Androguard https://pypi.org/project/androguard/
 - Python modules/libraries/api: 

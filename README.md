@@ -55,6 +55,8 @@ Open dconf-editor > org > gnome > desktop > media-handling, turn off <b>automoun
 ```
 python3 CLI.py
 ```
+**Step 7:** You may wish to use the image file provided, sdb3.img
+
 ## User Manual
 
 https://github.com/hengsf/gummybear/blob/main/USER_MANUAL.txt

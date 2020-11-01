@@ -16,13 +16,14 @@ Upon running the program script. A short welcome message will de displayed as we
 [2] - (NO DISK IMAGE) Create disk image of unmounted evidence disk
 [3] - Conduct finding of potential malware & produce analysis report
 
-? Which actionwould you like to perform?
+Which action would you like to perform?
 
 *[1] - Specify disk image location to find the file*
-For option 1,
+For option 1, users are required to enter the full path of the image file that he/she wish to use
+This will also create a backup image to work on and perform a analysis on 
 
 *[2] - (NO DISK IMAGE) Create disk image of unmounted evidence disk*
-For option 2,
+For option 2, users are required to enter the partition to create the disk image. 
 
 *[3] - Conduct finding of potential malware & produce analysis report*
 For option 3, user may direcly input the path of the file they would like to analyse on.

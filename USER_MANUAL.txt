@@ -21,4 +21,5 @@ For option 2,
 
 *[3] - Conduct finding of potential malware & produce analysis report*
 For option 3, user may direcly input the path of the file they would like to analyse on.
-This will produce a result consisting of whether the file has been recgonised as a known malware, and if this file type is accepted into being analysed by our program as we mainly look at either Portable Executable(PE) file and Android Application File(APK).
+This will produce a result consisting of whether the file has been recgonised as a known malware, and if this file type is accepted 
+into being analysed by our program as we mainly look at either Portable Executable(PE) file and Android Application File(APK).

@@ -51,11 +51,13 @@ apt install dconf-editor
 ```
 Open dconf-editor > org > gnome > desktop > media-handling, turn off <b>automount</b> and <b>automount-open</b> and restart your machine
 
-**Step 6:** Navigate to the folder containing the CLI.py file and Run as root with the following command to start the program:
+**Step 6:** You may wish to download and use the image file, sdb3.img to run the program.
+https://sitsingaporetechedu-my.sharepoint.com/:u:/g/personal/1902209_sit_singaporetech_edu_sg/Eax4BarxxYJLstPcBpXzBk0BxzvlBqlO6IvF5OLxjIQxSg?e=ddXaOX
+
+**Step 7:** Navigate to the folder containing the CLI.py file and Run as root with the following command to start the program:
 ```
 python3 CLI.py
 ```
-**Step 7:** You may wish to use the image file provided, sdb3.img
 
 ## User Manual
 

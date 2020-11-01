@@ -30,6 +30,7 @@ For option 3, user may direcly input the full path of the file they would like t
 Analysis Process
 [1] [2]
 For option 1 and 2, SHA1 is used to verify integrity of imaged files. 
+NOTE: After imaging, the program will create a mount piont '/mnt/gummybear' and mount the backup image. The user will be able to view this mount point and get access to the folders and files.
 1. After the disk imaging process, a list of directories will be shown. User will be prompted to key in a directory they wish to view. User input is case sensitive and should only key in folders in the exact format showm.
 2. A list of files including files from the subsequent sub folders will be shown. User will be prompted to key in the file they wish to analyze. User input is case sensitive and should only key in files in the exact format showm.
 

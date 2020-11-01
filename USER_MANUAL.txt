@@ -16,16 +16,32 @@ Upon running the program script. A short welcome message will de displayed as we
 [2] - (NO DISK IMAGE) Create disk image of unmounted evidence disk
 [3] - Conduct finding of potential malware & produce analysis report
 
-Which action would you like to perform?
+? Which action would you like to perform?
 
 *[1] - Specify disk image location to find the file*
-For option 1, users are required to enter the full path of the image file that he/she wish to use
-This will also create a backup image to work on and perform a analysis on 
+For option 1, user will have to manually key in the full path to the disk image. An additional working copy of the image will be made.
 
 *[2] - (NO DISK IMAGE) Create disk image of unmounted evidence disk*
-For option 2, users are required to enter the partition to create the disk image. 
+For option 2, a list of devices available from the user's Ubuntu machine will be shown to user. The program will further prompt the user to input a device in the sd** format (e.g. sdb1). The program will then image the disk and create an additional working copy.
 
 *[3] - Conduct finding of potential malware & produce analysis report*
-For option 3, user may direcly input the path of the file they would like to analyse on.
-This will produce a result consisting of whether the file has been recgonised as a known malware, and if this file type is accepted 
-into being analysed by our program as we mainly look at either Portable Executable(PE) file and Android Application File(APK).
+For option 3, user may direcly input the full path of the file they would like to analyse on.
+
+Analysis Process
+[1] [2]
+For option 1 and 2, SHA1 is used to verify integrity of imaged files. 
+1. After the disk imaging process, a list of directories will be shown. User will be prompted to key in a directory they wish to view. User input is case sensitive and should only key in folders in the exact format showm.
+2. A list of files including files from the subsequent sub folders will be shown. User will be prompted to key in the file they wish to analyze. User input is case sensitive and should only key in files in the exact format showm.
+
+Analysis Output
+[1] [2] [3]
+1. Should the chosen file be clean a messgae will be shown 'THIS ITEM LOOKS CLEAN'
+2. Should the file be as a malicious file, a report will be generate and shown to the user in the same terminal.
+This will produce a result consisting of whether the file has been recgonised as a known malware, and if this file type is accepted into being analysed by our program as we mainly look at either Portable Executable(PE) file and Android Application File(APK).
+3. The directory and file listing will be looped until user exits the program (Ctrl + C).
+4. Should the user input any incorrect folder or filename for option 1 and 2, the program will exit after user has input file name and have to be reran again as the program will only check against the full path as specified from the user.
+5. Should the user key in the incorrect file path for option 1, the program will exit have to be reran again.
+
+Limitations
+Hashing of files for verification with the API during the analysis process is limited to four queries per minute. Should the user encounter the following message, the user should exit the progam and run it again in two minutes.
+'This file has not been scanned due to the upload limitations on VirusTotal. Please run this application again in two minutes..'

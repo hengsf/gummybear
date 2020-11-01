@@ -77,7 +77,7 @@ python3 CLI.py
     * pefile https://pypi.org/project/pefile/
 
 ## Demo/User Guide
-youtube link and/or images here
+https://www.youtube.com/watch?v=sNmtoxQEh-U&feature=youtu.be
 
 ## Authors
 - Lim Zhi Hong @LZHcoroda https://github.com/LZHcoroda

@@ -51,7 +51,7 @@ apt install dconf-editor
 ```
 Open dconf-editor > org > gnome > desktop > media-handling, turn off <b>automount</b> and <b>automount-open</b> and restart your machine
 
-**Step 6:** Navigate to the foldercontaining the CLI.py file and Run as root with the following command to start the program:
+**Step 6:** Navigate to the folder containing the CLI.py file and Run as root with the following command to start the program:
 ```
 python3 CLI.py
 ```

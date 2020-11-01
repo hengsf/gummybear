@@ -13,5 +13,12 @@ Upon running the program script. A short welcome message will de displayed as we
 
 ? Which actionwould you like to perform?
 
+*[1] - Specify disk image location to find the file*
+For option 1,
 
+*[2] - (NO DISK IMAGE) Create disk image of unmounted evidence disk*
+For option 2,
 
+*[3] - Conduct finding of potential malware & produce analysis report*
+For option 3, user may direcly input the path of the file they would like to analyse on.
+This will produce a result consisting of whether the file has been recgonised as a known malware, and if this file type is accepted into being analysed by our program as we mainly look at either Portable Executable(PE) file and Android Application File(APK).

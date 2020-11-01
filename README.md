@@ -1,3 +1,5 @@
+![cover_img](https://github.com/hengsf/gummybear/blob/main/img/cover_img.PNG)
+
 ICT2202 Assignment One
 =======
 Hi there! This is our Digital Forensics Assignment for 2020/21 T1 - GummyBear Analyzer Tool. We are tasked to design and develop a technical solution for a problem in digital forensics. The amount of files generated for a malware sample could become tremendously huge, inspecting the hard disk requires an extensive effort. There, we focusing on a security tool for analysts and aim to automate some initial part of malware analysis with the help of virus databases such as VirusTotal.

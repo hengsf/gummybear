@@ -57,7 +57,7 @@ python3 CLI.py
 ```
 ## User Manual
 
-USER_MANUAL.txt
+https://github.com/hengsf/gummybear/blob/main/USER_MANUAL.txt
 
 ## Limitations
 - Imaging of disks will vary based on disk size.

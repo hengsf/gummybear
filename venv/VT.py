@@ -18,7 +18,7 @@ def get_path():
 
 # Input for option 1 and 2.
 def get_path_2():
-   in_val = input("Enter name of file: ")
+    in_val = input("Enter name of file: ")
     in_val = '/mnt/gummybear/' + in_val
     print('Choosing: ' + in_val)
     vt_query(in_val)   
